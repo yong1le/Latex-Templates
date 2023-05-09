@@ -1,0 +1,73 @@
+\documentclass[]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[]{fancyhdr}
+\usepackage{titling, titlesec}
+\usepackage{listings}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\lstset{frame=tb,
+  language=c++,
+  aboveskip=5mm,
+  belowskip=5mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{blue},
+  keywordstyle=\color{red},
+  commentstyle=\color{pink},
+  stringstyle=\color{green},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3}
+
+\usepackage{mdframed}
+\usepackage{graphicx}
+
+\author{Yong Le He}
+\title{}
+
+\pagestyle{fancy}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\maketitle} {
+  \topskip0pt
+  \vspace*{\fill}
+    \begin{center}
+      {\huge\thetitle}
+
+      \vspace{1em}
+      {\huge\theauthor}
+    \end{center}
+  \vspace*{\fill}
+  \pagebreak
+}
+
+\titleformat{\section}
+{\Huge\bfseries}
+{\Huge\thesection: }
+{0.5em}
+{}
+
+\titleformat{\subsection}
+{\huge}
+{\huge\thesubsection: }
+{0.5em}
+{}
+
+\titleformat{\subsubsection}
+{\large}
+{\large\thesubsubsection:}
+{0.5em}
+{}
+
+% lstlisting: block code
+% lstinline: inline code
+% lstinputlisting: source file
+\begin{document}
+
+\maketitle
+\tableofcontents
+\pagebreak
+
+\end{document}
