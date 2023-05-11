@@ -34,10 +34,10 @@
   \topskip0pt
   \vspace*{\fill}
     \begin{center}
-      {\huge\thetitle}
+      \textcolor{magenta}{\huge\thetitle}
 
       \vspace{1em}
-      {\huge\theauthor}
+      \textcolor{magenta}{\huge\theauthor}
     \end{center}
   \vspace*{\fill}
   \pagebreak
@@ -45,21 +45,25 @@
 
 \titleformat{\section}
 {\Huge\bfseries}
-{\Huge\thesection: }
+{\textcolor{magenta}{\thesection:}}
 {0.5em}
-{}
+{\textcolor{magenta}}
 
 \titleformat{\subsection}
 {\huge}
-{\huge\thesubsection: }
+{\textcolor{magenta}{\huge\thesubsection: }}
 {0.5em}
-{}
+{\textcolor{magenta}}
 
 \titleformat{\subsubsection}
 {\large}
-{\large\thesubsubsection:}
+{\textcolor{magenta}{\large\thesubsubsection:}}
 {0.5em}
-{}
+{\textcolor{magenta}}
+
+\DeclareTextFontCommand{\emph}{\color{red}\em}
+\newcommand{\dq}[1]{\textcolor{blue}{\bf``#1''}}
+\newcommand{\sq}[1]{\textcolor{blue}{\bf`#1'}}
 
 % lstlisting: block code
 % lstinline: inline code
