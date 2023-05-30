@@ -2,11 +2,11 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[]{fancyhdr}
 \usepackage{titling, titlesec}
-\usepackage{listings}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
 \usepackage{mdframed}
 \usepackage{graphicx}
+\usepackage[outputdir=outputs]{minted}
 
 \author{Yong Le He}
 \title{}
@@ -48,6 +48,9 @@
 \DeclareTextFontCommand{\emph}{\color{red}\em}
 \newcommand{\dq}[1]{\textcolor{blue}{\bf``#1''}}
 \newcommand{\sq}[1]{\textcolor{blue}{\bf`#1'}}
+
+\BeforeBeginEnvironment{minted}{\begin{mdframed}}
+\AfterEndDocument{minted{\end{mdframed}}}
 
 \begin{document}
 
