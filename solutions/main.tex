@@ -3,6 +3,7 @@
 
 \usepackage[]{fancyhdr}
 \usepackage{titlesec}
+\usepackage{graphicx}
 
 \usepackage{mathtools, amsmath, amsthm, amssymb, enumitem, mdframed}
 
@@ -11,7 +12,7 @@
   {Yong Le He}
 }
 \fancyhead[C]{
-  {Solutions}
+  {}
 }
 \fancyhead[R]{
   \today
@@ -19,16 +20,13 @@
 \fancyfoot{}
 \fancyfoot[C]{\thepage}
 
-\titleformat{\section}
-{}
-{\thesection .}
-{1em}
-{}
-
 \renewcommand{\qedsymbol}{$\blacksquare$}
 
+\theoremstyle{definition}
+\newtheorem*{ans}{Answer}
+\BeforeBeginEnvironment{ans}{\begin{mdframed}}
+\AfterEndEnvironment{ans}{\end{mdframed}}
+
 \begin{document}
-\section{}
-\pagebreak
 
 \end{document}
