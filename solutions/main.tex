@@ -4,8 +4,10 @@
 \usepackage[]{fancyhdr}
 \usepackage{titlesec}
 \usepackage{graphicx}
+\usepackage[outputdir=outputs]{minted}
 
 \usepackage{mathtools, amsmath, amsthm, amssymb, enumitem, mdframed}
+\usepackage{forest}
 
 \pagestyle{fancy}
 \fancyhead[L]{
@@ -19,6 +21,7 @@
 }
 \fancyfoot{}
 \fancyfoot[C]{\thepage}
+\allowdisplaybreaks
 
 \renewcommand{\qedsymbol}{$\blacksquare$}
 
@@ -28,5 +31,6 @@
 \AfterEndEnvironment{ans}{\end{mdframed}}
 
 \begin{document}
-
+\tikzset{every label/.style={xshift=-4ex, text width=6ex, align=right, 
+                             inner sep=1pt, font=\footnotesize}}
 \end{document}
